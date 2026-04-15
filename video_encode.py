@@ -59,7 +59,7 @@ def rebuild_video_with_audio(frames, output_path, fps, orig_video_path):
         "ffmpeg", "-y",
         "-i", temp_no_audio,
         "-i", orig_video_path,
-        "-c:v", "copy",   # do NOT re-encode video
+        "-c:v", "copy",    
         "-c:a", "copy",   # keep original audio
         output_path
     ]
