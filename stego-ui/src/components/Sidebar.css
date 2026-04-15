@@ -1,0 +1,43 @@
+.sidebar {
+  width: 14rem; /* EXACT MATCH for page layout */
+  height: 100vh;
+  background: #0d1224;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.25);
+  padding-top: 45px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 1px solid rgba(0, 255, 255, 0.25);
+}
+
+.logo {
+  text-align: center;
+  color: #00ffee;
+  margin-bottom: 50px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  text-shadow: 0 0 12px rgba(0, 255, 180, 0.8);
+}
+
+.nav-btn {
+  display: block;
+  padding: 16px 26px;
+  margin: 12px 18px;
+  background: rgba(0, 255, 255, 0.12);
+  color: #00f7ff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 19px;
+  font-weight: 600;
+  transition: 0.25s ease;
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+}
+
+.nav-btn:hover {
+  background: #00f7ff;
+  color: #00141a;
+  transform: translateX(6px) scale(1.05);
+  box-shadow: 0 0 18px rgba(0, 255, 255, 0.8);
+}

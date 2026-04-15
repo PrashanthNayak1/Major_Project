@@ -1,0 +1,73 @@
+# -----------------------------
+# Node / React frontend ignores
+# -----------------------------
+node_modules/
+build/
+dist/
+.cache/
+.DS_Store
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# VSCode settings
+.vscode/
+
+# -----------------------------
+# Python backend ignores
+# -----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtual environment folders
+venv/
+env/
+.venv/
+
+# Byte-compiled / optimized files
+*.egg
+*.egg-info/
+.eggs/
+
+# -----------------------------
+# Media / Payload Files
+# (Important for steganography)
+# -----------------------------
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.png
+*.jpg
+*.jpeg
+*.bmp
+
+# If you store encoded/decoded videos here
+recovered/
+payloads/
+output/
+frames/
+
+# Large checkpoints/models (if any ML model later)
+models/
+*.h5
+*.pth
+*.pt
+
+# -----------------------------
+# OS generated files
+# -----------------------------
+Thumbs.db

@@ -1,0 +1,40 @@
+/* src/components/circle.css */
+
+.progress-shell {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-ring {
+  width: 140px;
+  height: 140px;
+  transform: rotate(-90deg);
+}
+
+.ring-bg {
+  fill: none;
+  stroke: rgba(0, 255, 153, 0.15);
+  stroke-width: 10;
+}
+
+.ring-fg {
+  fill: none;
+  stroke: #00ff99;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 339;
+  filter: drop-shadow(0 0 8px rgba(0, 255, 153, 0.9));
+  transition: stroke-dashoffset 0.4s ease;
+}
+
+.progress-center-text {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 700;
+  color: #eafff6;
+  text-shadow: 0 0 6px rgba(0, 255, 153, 0.9);
+}
