@@ -1,38 +1,76 @@
-.App {
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0a0f1f;
+  color: #e2e8f0;
+}
+
+h1, h2 {
+  color: #00eaff;
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 35px 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0px 0px 25px rgba(0, 255, 255, 0.25);
+  width: 420px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input, button {
+  width: 90%;
+  margin-top: 18px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+  background: #00eaff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  transform: scale(1.05);
+  background: #00c6d6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.progress-container {
+  width: 90%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #00eaff;
+  border-radius: 8px;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+.page-container {
+  margin-left: 240px;
+  padding-top: 40px;
 }
